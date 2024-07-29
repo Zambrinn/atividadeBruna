@@ -4,10 +4,10 @@ public class attBruna {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Informe um valor em reais (R$): ");
-        // Faz uma validacao coaso o usuario informe um numero positivo
+        // Faz uma validacao caso o usuario informe um numero não negativo
         if ( scanner.hasNextDouble() ) {
             double value = scanner.nextDouble();
-            if ( value < 0 ) {
+            if ( value <= 0 ) {
                 System.out.println("Digite um valor positivo: ");
             } else {
                 printCurrency(value);
